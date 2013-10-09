@@ -1,7 +1,7 @@
 <?php $this->load->view('_layout/header'); ?>
 
 	<div id="wrapper">
-		<h1>Form Pendaftaran Bakti Pemuda</h1>
+		<h1>Charles Form Pendaftaran Bakti Pemuda</h1>
 
 		<p>Bakti Pemuda digagas, dibentuk dan diluncurkan untuk mempercepat peningkatan ekonomi masyarakat secara mandiri dan berkelanjutan di wilayah perbatasan, khususnya di daerah tertinggal. Program ini bertujuan untuk meningkatkan partisipasi masyarakat meningkatkan pelaksanaan program-program pembangunan oleh pemerintah yang berpihak kepada masyarakat miskin (pro-poor),meningkatkan modal sosial masyarakat dan peningkatan inovasi dan pemanfaatan teknologi tepat guna dalam pembangunan ekonomi masyarakat.</p>
 
