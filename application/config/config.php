@@ -16,10 +16,10 @@
 */
 
 // Konfigurasi Default dari Codeigniter
-// $config['base_url']	= '';
+$config['base_url']	= '';
 
 // Konfigurasi untuk PostgreSQL untuk deployment di Heroku
-$config['base_url']	= sprintf('%s://%s', $_SERVER['HTTP_X_FORWARDED_PROTO'], $_SERVER['HTTP_HOST']);
+// $config['base_url']	= sprintf('%s://%s', $_SERVER['HTTP_X_FORWARDED_PROTO'], $_SERVER['HTTP_HOST']);
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ $config['base_url']	= sprintf('%s://%s', $_SERVER['HTTP_X_FORWARDED_PROTO'], $_S
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -229,7 +229,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'baktipemuda2013kpdt';
 
 /*
 |--------------------------------------------------------------------------
