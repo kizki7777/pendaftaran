@@ -1,0 +1,26 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: auto;
+}
+body{
+	background-color: #fff;
+	font-family: helvetica,arial,tahoma,verdana,sans-serif;
+}
+#wrapper{
+	width: 750px;
+	display: block;
+	margin: 0 auto;
+	text-align: justify;
+	color: #333333;
+	padding: 5px;
+}
+h1{
+	text-align: center;
+	margin-top: 40px;
+	color: #333333;
+}
+
+p.italic{
+	font-style: italic;
+}
