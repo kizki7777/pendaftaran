@@ -39,10 +39,8 @@ $(window).load(function() {
 
 	//Form handling
 	$('#mrova-sendbutton').click( function() {
-				var url = 'send.php';
-				var error = 0;
-				
-				
+				// var url = '';
+				var error = 0;				
 				
 				$('.required', $mrova_contactform).each(function(i) {
 					if($(this).val() === '') {
