@@ -7,9 +7,14 @@ body{
 	background-color: #ECF0F1;
 	font-family: helvetica,arial,tahoma,verdana,sans-serif;
 }
-
-body.blue{
-	background:#ECF0F1;
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+small{
+	color:red;
 }
 #wrapper{
 	width: 750px;
@@ -186,4 +191,8 @@ nav a:focus {
 .csstransforms3d .cl-effect-2 a:hover span::before,
 .csstransforms3d .cl-effect-2 a:focus span::before {
 	background: #28a2ee;	
+}
+
+textarea{
+	font-family: 'helvetica';
 }

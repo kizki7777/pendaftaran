@@ -19,8 +19,9 @@ class Daftar extends CI_Controller {
 	function add()
 	{
 	    $config['upload_path'] = './uploads/';
-	    $config['allowed_types'] = 'doc|pdf';
+	    $config['allowed_types'] = 'pdf';
 	    $config['max_size'] = '300';
+	    $config['file_name'] = 'CV_'.$this->input->post('name');
 
 	    $this->load->library('upload', $config);
 
@@ -36,17 +37,19 @@ class Daftar extends CI_Controller {
 	        // success
 	        $data = array('upload_data' => $this->upload->data());
 
+	        $file_name = $data["upload_data"]["file_name"];
+
 	        $data = array(
 						'nama' => $this->input->post('name'),
 						'email' => $this->input->post('email'),
 						'message' => $this->input->post('message'),
-						'cv' => $data["upload_data"]["file_name"],
+						'cv' => $file_name
 					);
 
 			$this->daftar_model->add($data);
 
 			$data['meta_title'] = 'Berhasil terdaftar!';
-			$data['info'] = print_r($data);
+			$data['info'] = $data;
 
 	        $this->load->view('sukses', $data);
 	    }

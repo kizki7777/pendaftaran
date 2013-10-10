@@ -1,3 +1,4 @@
+
 <div id="mrova-feedback">
 	<div id="mrova-contact-thankyou" style="display: none;">
 		Thank you.  We'hv received your feedback.
@@ -21,6 +22,7 @@
 				<li>
 					<label for="cv">Upload CV*</label>
 					<input type="file" name="cv" class="required" id="mrova-cv" value="">
+					<small><em><div class="fl">Format file: *.pdf</div><div class="fr">max-size 300kb</div></em></small>
 				</li>
 			</ul>
 			<input type="submit" value="Kirim" id="mrova-sendbutton" name="mrova-sendbutton">
