@@ -7,9 +7,9 @@ class Daftar_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function add($info)
+	function add($data)
 	{
-		$this->db->set($info);
+		$this->db->set($data);
 		$query = $this->db->insert('tb_member');
 		return $query;
 	}

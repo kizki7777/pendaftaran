@@ -8,6 +8,9 @@
 		<nav class="cl-effect-2">
 			<a href="<?php echo site_url('daftar') ?>"><span data-hover="Kembali ke halaman pendaftaran">Kembali ke halaman pendaftaran</span></a>
 		</nav>
+		<p>
+			<?php echo $info['name'] ?>
+		</p>
 	</div>
 
 <?php $this->load->view('_layout/footer'); ?>

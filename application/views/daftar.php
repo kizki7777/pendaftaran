@@ -1,6 +1,8 @@
 <?php $this->load->view('_layout/header'); ?>
 
 	<div id="wrapper">
+		<?php echo $error; ?>
+
 		<h1>Form Pendaftaran Bakti Pemuda</h1>
 
 		<p>Kami percaya bahwa pemuda indonesia haruslah menjadi sosok yang keren. Bagi pemuda, keren bukanlah pilihan, melainkan sebuah keharusan. Dan keren itu diukur bukan seberapa bagus tampilanmu atau bahkan seberapa bagus nilai-nilaimu. Yang lebih penting lagi, keren itu bukan seberapa pintar kamu mengkritisi dunia sekitarmu, lingkunganmu, pemerintahanmu, dan negaramu. Keren itu adalah tidak hanya sekedar mengkritik tetapi juga berani untuk melakukan sesuatu untuk apa yang kamu kritisi, walau itu kecil.</p>

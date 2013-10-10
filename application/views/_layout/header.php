@@ -12,4 +12,4 @@
 	<!-- END -->
 
 </head>
-<body class="<?php echo $body_class; ?>">
+<body>

@@ -4,7 +4,7 @@
 	</div>
 	<div id="mrova-form">
 		<?php $attrib = array('id' => 'mrova-contactform'); ?>
-		<?php echo form_open('daftar/add', $attrib); ?>
+		<?php echo form_open_multipart('daftar/add', $attrib); ?>
 			<ul >
 				<li>
 					<label for="name">Nama*</label>

@@ -11,32 +11,45 @@ class Daftar extends CI_Controller {
 	{
 		// title
 		$data['meta_title'] = 'Pendaftaran';
-		$data['body_class'] = '';
+		$data['error'] = '';
 		
 		$this->load->view('daftar', $data);
 	}
 
 	function add()
 	{
-		$info = array(
-					'nama' => $this->input->post('name'),
-					'email' => $this->input->post('email'),
-					'message' => $this->input->post('message'),
-					'cv' => $this->input->post('cv'),
-				);
+	    $config['upload_path'] = './uploads/';
+	    $config['allowed_types'] = 'doc|pdf';
+	    $config['max_size'] = '300';
 
-		$data['members'] = $this->daftar_model->add($info);
+	    $this->load->library('upload', $config);
 
-		redirect('daftar/sukses', 'refresh');
-	}
+	    if ( ! $this->upload->do_upload('cv'))
+	    {
+	        // no file uploaded or failed upload
+	        $data['meta_title'] = 'Kesalahan upload!';
+	        $data['error'] = '<div class="error message"><p>'.$this->upload->display_errors().'</p></div>';
+	        $this->load->view('daftar', $data);
+	    }
+	    else
+	    {
+	        // success
+	        $data = array('upload_data' => $this->upload->data());
 
-	function sukses()
-	{
-		// title
-		$data['meta_title'] = 'Berhasil terdaftar!';
-		$data['body_class'] = 'blue';
-		
-		$this->load->view('sukses', $data);
+	        $data = array(
+						'nama' => $this->input->post('name'),
+						'email' => $this->input->post('email'),
+						'message' => $this->input->post('message'),
+						'cv' => $data["upload_data"]["file_name"],
+					);
+
+			$this->daftar_model->add($data);
+
+			$data['meta_title'] = 'Berhasil terdaftar!';
+			$data['info'] = print_r($data);
+
+	        $this->load->view('sukses', $data);
+	    }
 	}
 }
 

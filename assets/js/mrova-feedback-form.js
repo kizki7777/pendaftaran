@@ -49,7 +49,7 @@ $(window).load(function() {
 				});
 				// each
 				if(error > 0) {
-					alert('Please fill in all the mandatory fields. Mandatory fields are marked with an asterisk *.');
+					alert('Harap isi semua bidang yang diberi tanda (*).');
 				} else {
 					$str = $mrova_contactform.serialize();
 
