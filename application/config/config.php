@@ -16,10 +16,10 @@
 */
 
 // Konfigurasi Default dari Codeigniter
-// $config['base_url']	= '';
+$config['base_url']	= '';
 
 // Konfigurasi untuk PostgreSQL untuk deployment di Heroku
-$config['base_url']	= sprintf('%s://%s', $_SERVER['HTTP_X_FORWARDED_PROTO'], $_SERVER['HTTP_HOST']);
+// $config['base_url']	= sprintf('%s://%s', $_SERVER['HTTP_X_FORWARDED_PROTO'], $_SERVER['HTTP_HOST']);
 
 /*
 |--------------------------------------------------------------------------

@@ -52,33 +52,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-// $db['default']['hostname'] = 'localhost';
-// $db['default']['username'] = '';
-// $db['default']['password'] = '';
-// $db['default']['database'] = '';
-// $db['default']['dbdriver'] = 'mysql';
-// $db['default']['dbprefix'] = '';
-// $db['default']['pconnect'] = TRUE;
-// $db['default']['db_debug'] = TRUE;
-// $db['default']['cache_on'] = FALSE;
-// $db['default']['cachedir'] = '';
-// $db['default']['char_set'] = 'utf8';
-// $db['default']['dbcollat'] = 'utf8_general_ci';
-// $db['default']['swap_pre'] = '';
-// $db['default']['autoinit'] = TRUE;
-// $db['default']['stricton'] = FALSE;
-
-// =======================================================
-
-// KONFIGURASI DATABASE POSTGRE SQL UNTUK DEPLOYMENT DI HEROKU
-
-$heroku_postgre_url = parse_url($_SERVER['DATABASE_URL']);
-
-$db['default']['hostname'] = $heroku_postgre_url['host'];
-$db['default']['username'] = $heroku_postgre_url['user'];
-$db['default']['password'] = $heroku_postgre_url['pass'];
-$db['default']['database'] = trim($heroku_postgre_url['path'], '/');
-$db['default']['dbdriver'] = 'postgre';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
+$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -89,6 +67,28 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+// =======================================================
+
+// KONFIGURASI DATABASE POSTGRE SQL UNTUK DEPLOYMENT DI HEROKU
+
+// $heroku_postgre_url = parse_url($_SERVER['DATABASE_URL']);
+
+// $db['default']['hostname'] = $heroku_postgre_url['host'];
+// $db['default']['username'] = $heroku_postgre_url['user'];
+// $db['default']['password'] = $heroku_postgre_url['pass'];
+// $db['default']['database'] = trim($heroku_postgre_url['path'], '/');
+// $db['default']['dbdriver'] = 'postgre';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = TRUE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
