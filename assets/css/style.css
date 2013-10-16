@@ -17,13 +17,17 @@ small{
 	color:red;
 }
 #wrapper{
-	width: 750px;
+	width: 760px;
 	display: block;
 	margin: 0 auto;
 	text-align: justify;
 	color: #333333;
 	padding: 5px;
 	margin-top:20px;
+}
+#wrapper img.for-bg{
+	width: 100%;
+	height: auto;
 }
 h1{
 	text-align: center;
